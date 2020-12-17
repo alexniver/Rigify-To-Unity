@@ -97,7 +97,7 @@ class UnityMecanim_Convert2Unity(bpy.types.Operator):
 
         bpy.ops.object.mode_set(mode='OBJECT')
 
-        namelist = [("DEF-spine.006", "DEF-head"),("DEF-spine.005","DEF-neck")]
+        namelist = [("DEF-spine.006", "DEF-head"),("DEF-spine.005","DEF-neck"),("DEF-spine","DEF-Hips"),("DEF-spine.001","DEF-spine")]
 
         for name, newname in namelist:
             # get the pose bone with name
